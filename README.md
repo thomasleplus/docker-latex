@@ -9,7 +9,7 @@ Assuming that you have a file `foo.tex` in your current working directory that y
 ### Mac/Linux
 
 ```
-$ docker run -it -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -pdf foo.tex
+$ docker run -it -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -pdf /tmp/foo.tex
 ```
 
 ### Windows
@@ -17,13 +17,13 @@ $ docker run -it -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -pdf foo.tex
 In `cmd`:
 
 ```
-$ docker run -it -v "%cd%:/tmp" thomasleplus/docker-latex latexmk -pdf foo.tex
+$ docker run -it -v "%cd%:/tmp" thomasleplus/docker-latex latexmk -pdf /tmp/foo.tex
 ```
 
 In PowerShell:
 
 ```
-$ docker run -it -v "${PWD}:/tmp" thomasleplus/docker-latex latexmk -pdf foo.tex
+$ docker run -it -v "${PWD}:/tmp" thomasleplus/docker-latex latexmk -pdf /tmp/foo.tex
 ```
 
 ## Help
