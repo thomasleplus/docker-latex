@@ -9,7 +9,7 @@ Assuming that you have a file `foo.tex` in your current working directory that y
 ### Mac/Linux
 
 ```
-$ docker run -it -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
+$ docker run --rm -it --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
 ```
 
 ### Windows
@@ -17,13 +17,13 @@ $ docker run -it -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp
 In `cmd`:
 
 ```
-$ docker run -it -v "%cd%:/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
+$ docker run --rm -it -v "%cd%:/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
 ```
 
 In PowerShell:
 
 ```
-$ docker run -it -v "${PWD}:/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
+$ docker run --rm -it -v "${PWD}:/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
 ```
 
 ## Help
@@ -31,5 +31,5 @@ $ docker run -it -v "${PWD}:/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp
 To know more command line options of `latexmk`:
 
 ```
-$ docker run -it thomasleplus/docker-latex latexmk -h
+$ docker run --rm -it thomasleplus/docker-latex latexmk -h
 ```
