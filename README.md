@@ -1,11 +1,35 @@
-# dockerfiles
+# docker-latex
 
-Here are some Dockerfiles.
+A convenient way to run LaTeX on various platform using Docker.
 
-Since Docker Hub does not have GitLab integration (as of the writing of this
-file), this repository is hosted both [on GitLab][gl] and [on GitHub][gh].
+## Example
 
+Assuming that you have a file `foo.tex` in your current working directory that you want to convert into a PDF `foo.pdf`:
 
-[gl]: https://gitlab.com/aergus/dockerfiles
-[gh]: https://github.com/aergus/dockerfiles
+### Mac/Linux
 
+```
+$ docker run -it -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -pdf foo.tex
+```
+
+### Windows
+
+In `cmd`:
+
+```
+$ docker run -it -v "%cd%:/tmp" thomasleplus/docker-latex latexmk -pdf foo.tex
+```
+
+In PowerShell:
+
+```
+$ docker run -it -v "${PWD}:/tmp" thomasleplus/docker-latex latexmk -pdf foo.tex
+```
+
+## Help
+
+To know more command line options of `latexmk`:
+
+```
+$ docker run -it thomasleplus/docker-latex latexmk -h
+```
