@@ -1,6 +1,6 @@
 # LaTeX
 
-A convenient way to run LaTeX on various platform using Docker.
+A convenient way to run LaTeX on various platform using Docker (latexmk, pdflatex...).
 
 ## Example
 
