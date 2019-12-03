@@ -9,7 +9,7 @@ Assuming that you have a file `foo.tex` in your current working directory that y
 ### Mac/Linux
 
 ```
-$ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
+$ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
 ```
 
 ### Windows
@@ -17,13 +17,13 @@ $ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" tho
 In `cmd`:
 
 ```
-$ docker run --rm -it --net=none -v "%cd%:/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
+$ docker run --rm -it --net=none -v "%cd%:/tmp" thomasleplus/latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
 ```
 
 In PowerShell:
 
 ```
-$ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/docker-latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
+$ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/latex latexmk -outdir=/tmp -pdf /tmp/foo.tex
 ```
 
 ## Help
@@ -31,5 +31,5 @@ $ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/docker-latex late
 To know more command line options of `latexmk`:
 
 ```
-$ docker run --rm -it --net=none thomasleplus/docker-latex latexmk -h
+$ docker run --rm -it --net=none thomasleplus/latex latexmk -h
 ```
