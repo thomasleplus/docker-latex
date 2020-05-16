@@ -7,6 +7,7 @@ A convenient way to run LaTeX on various platform using Docker (latexmk, pdflate
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/latex)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/latex)
 ![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/latex)
+![Docker Version](https://img.shields.io/docker/v/thomasleplus/latex?sort=semver)
 
 ## Example
 
