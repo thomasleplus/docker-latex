@@ -2,6 +2,11 @@
 
 A convenient way to run LaTeX on various platform using Docker (latexmk, pdflatex...).
 
+![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/latex.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/latex.svg)
+![Docker Automated](https://img.shields.io/docker/automated/thomasleplus/latex.svg)
+![Docker Build](https://img.shields.io/docker/build/thomasleplus/latex.svg)
+
 ## Example
 
 Assuming that you have a file `foo.tex` in your current working directory that you want to convert into a PDF `foo.pdf`:
