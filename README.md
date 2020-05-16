@@ -2,10 +2,11 @@
 
 A convenient way to run LaTeX on various platform using Docker (latexmk, pdflatex...).
 
-![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/latex.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/latex.svg)
-![Docker Automated](https://img.shields.io/docker/automated/thomasleplus/latex.svg)
-![Docker Build](https://img.shields.io/docker/build/thomasleplus/latex.svg)
+![GitHub Build](https://img.shields.io/github/workflow/status/thomasleplus/docker-latex/Docker%20Image%20CI)
+![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/latex)
+![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/latex)
+![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/latex)
+![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/latex)
 
 ## Example
 
