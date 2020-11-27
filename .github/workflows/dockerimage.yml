@@ -1,6 +1,10 @@
 name: Docker Image CI
 
-on: [push]
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: '0 0 * * 0'
 
 jobs:
 
@@ -12,4 +16,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build the Docker image
       working-directory: latex
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build .
