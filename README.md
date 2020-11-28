@@ -2,7 +2,7 @@
 
 A convenient way to run LaTeX on various platform using Docker (latexmk, pdflatex...).
 
-![GitHub Build](https://img.shields.io/github/workflow/status/thomasleplus/docker-latex/Docker%20Image%20CI)
+![Docker Build](https://github.com/thomasleplus/docker-latex/workflows/Docker/badge.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/latex)
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/latex)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/latex)
