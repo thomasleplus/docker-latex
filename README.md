@@ -2,12 +2,12 @@
 
 A convenient way to run LaTeX on various platform using Docker (latexmk, pdflatex...).
 
-![Docker Build](https://github.com/thomasleplus/docker-latex/workflows/Docker/badge.svg)
-![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/latex)
-![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/latex)
-![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/latex)
-![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/latex)
-![Docker Version](https://img.shields.io/docker/v/thomasleplus/latex?sort=semver)
+[![Docker Build](https://github.com/thomasleplus/docker-latex/workflows/Docker/badge.svg)](https://github.com/thomasleplus/docker-latex/actions?query=workflow:"Docker")
+[![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/latex)](https://hub.docker.com/r/thomasleplus/latex)
+[![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/latex)](https://hub.docker.com/r/thomasleplus/latex)
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/latex)](https://hub.docker.com/r/thomasleplus/latex)
+[![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/latex)](https://hub.docker.com/r/thomasleplus/latex)
+[![Docker Version](https://img.shields.io/docker/v/thomasleplus/latex?sort=semver)](https://hub.docker.com/r/thomasleplus/latex)
 
 ## Example
 
